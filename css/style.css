@@ -1,0 +1,51 @@
+.multifile{
+    width:100% !important;
+}
+.post-image{
+    width:10vw !important;
+    height:auto !important;
+}
+#lightbox{
+    width:80vw;
+    height:100vh;
+    left:20vw;
+    position:fixed;
+    background:rgba(0,0,0,0.3);
+    z-index:10000;
+}
+
+#lightbox img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    max-width:90%;
+    max-height:90%;
+}
+table{
+    position: fixed !important;
+    bottom: 20px !important;
+    right: -410px !important;
+    background: #333333 !important;
+    padding-left: 50px !important;
+    transition: .2s;
+}
+table:hover{
+    right: 0 !important;
+    transition: .3s;
+}
+
+.reply{
+    width: 100% !important;
+}
+#quick-reply{
+    width: 250px !important;
+}
+
+#expand-img{
+    color: #cccccc;
+    text-decoration: none;
+    cursor:pointer;
+}
+#expand-img:hover{
+    color:#ffffff;
+}
