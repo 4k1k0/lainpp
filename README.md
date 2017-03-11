@@ -1,10 +1,10 @@
 #Lainpp
 
-##Why Lainpp ?
-Because I am a C++ nerd.
+##What is Lainpp?
+Lainpp is a browser extension for [Lainchan](https://lainchan.org). It *"works"* in Chromium/Chrome and Firefox.
 
-##Why Chrome and not Firefox?
-Because I was using Windows with Chrome when I started this. I don't know how to make a Firefox Extension but it should be very simple to write the json or xml for Firefox. Please do it for me.
+##Why Lainpp?
+Because I am a C++ nerd.
 
 ##Does it work?
 Barely. It has a lot of bugs but you can help if you want.
