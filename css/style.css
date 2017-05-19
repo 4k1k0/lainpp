@@ -21,6 +21,9 @@
     max-width:90%;
     max-height:90%;
 }
+.lightbox-img-hide{
+    display: none;
+}
 table{
     position: fixed !important;
     bottom: 20px !important;
