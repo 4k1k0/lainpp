@@ -1,12 +1,9 @@
 function lightbox(){
     var img = document.getElementsByClassName('post-image');
-    var link, w, h;
+    var link;
 
     /*
      * Load all the big images in the thread
-     * this way the width and height can be used
-     * to set the margin the first time the pointer
-     * is on an image
     */
     for (var i = 0; i < img.length; i++) {
       link = img[i].parentElement.href;
@@ -15,17 +12,12 @@ function lightbox(){
 
     for(var i = 0; i < img.length; i++){
         /*
-         *  When the pointer is on an image: load image into a lightbox,
-         *  read the width and height of the new image
-         *  and centers the image using those values
+         *  When the pointer is on an image
+         *  the image appears in the lightbox
         */
         img[i].addEventListener('mouseover', function(){
             link = this.parentElement.href;
             document.getElementById('thread').insertAdjacentHTML('afterbegin', '<div id="lightbox"><img id="lightbox-img" src="' + link + '"></div>');
-            var lightboxImg = document.getElementById('lightbox-img');
-            h = lightboxImg.height;
-            w = lightboxImg.width;
-            lightboxImg.style.margin = '-' + h/2 + 'px 0px 0px -' + w/2 + 'px';
         }, false);
 
         /*

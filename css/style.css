@@ -12,12 +12,12 @@
     position:fixed;
     background:rgba(0,0,0,0.3);
     z-index:10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #lightbox img{
-    position: absolute;
-    top:50%;
-    left:50%;
     max-width:90%;
     max-height:90%;
 }
