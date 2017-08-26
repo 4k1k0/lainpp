@@ -1,16 +1,16 @@
 function lightbox(){
-    var img = document.getElementsByClassName('post-image');
-    var link;
+    let img = document.getElementsByClassName('post-image');
+    let link;
 
     /*
      * Load all the big images in the thread
     */
-    for (var i = 0; i < img.length; i++) {
+    for (let i = 0; i < img.length; i++) {
       link = img[i].parentElement.href;
       document.getElementById('thread').insertAdjacentHTML('afterbegin', '<img class="lightbox-img-hide" src="' + link + '">');
     }
 
-    for(var i = 0; i < img.length; i++){
+    for(let i = 0; i < img.length; i++){
         /*
          *  When the pointer is on an image
          *  the image appears in the lightbox
@@ -38,15 +38,15 @@ function expandIMG(){
      *  to load all the original images in the thread
     */
 
-    var bottomBar = document.getElementsByClassName('threadlinks');
-    for(var i = 0; i < bottomBar.length; i++){
+    let bottomBar = document.getElementsByClassName('threadlinks');
+    for(let i = 0; i < bottomBar.length; i++){
         bottomBar[i].insertAdjacentHTML('afterbegin', '<span class="threadlink"><a id="expand-img">[  Expand images  ]  </a></span>');
     }
 
-    var botton = document.getElementById('expand-img');
-    var img = document.getElementsByClassName('post-image');
+    let botton = document.getElementById('expand-img');
+    let img = document.getElementsByClassName('post-image');
     botton.addEventListener('click', function(){
-        for(var i = 0; i < img.length; i++){
+        for(let i = 0; i < img.length; i++){
             img[i].click();
         }
     });
