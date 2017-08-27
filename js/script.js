@@ -22,6 +22,7 @@ function lightbox(){
               case '.jpg':
               case 'jpeg':
               case '.gif':
+              case '.bmp':
                 document.getElementById('thread').insertAdjacentHTML(
                   'afterbegin',
                   '<div id="lightbox"><img id="lightbox-img" src="' + link + '"></div>'
