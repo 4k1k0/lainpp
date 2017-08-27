@@ -2,14 +2,13 @@
   "manifest_version": 2,
 
   "name": "Lain++",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "This extension gives Lainchan.org new functions",
-  "version": "1.0",
   "author": "Akko",
   "homepage_url": "https://github.com/4k1k0/lainpp",
 
   "browser_action": {
-    "default_icon": "img/icon16.png",
+    "default_icon": "img/icon48.png",
     "default_title": "Lain++"
   },
   "icons": { "16": "img/icon16.png",
@@ -35,4 +34,3 @@
     "https://ajax.googleapis.com/"
   ]
 }
-

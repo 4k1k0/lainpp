@@ -16,5 +16,4 @@ Because I didn't want to install all the dependencies just to test a few lines o
 I know but I'm not sure if I'm able to use the Lainchan's favicon for this, ~~but I use that icon on my computer and it looks cute.~~
 
 ## TODO
-- Fix the lightbox, when you load an image for the first time it doesn't use the margin.
 - When you use the *Expand everything* button it also loads the videos.
