@@ -21,6 +21,12 @@
     max-width:90%;
     max-height:90%;
 }
+
+#lightbox video {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 .lightbox-img-hide{
     display: none;
 }

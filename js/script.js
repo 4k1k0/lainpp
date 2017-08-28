@@ -6,7 +6,9 @@ function lightbox(){
     */
     for (let i = 0; i < img.length; i++) {
       let link = img[i].parentElement.href;
-      document.getElementById('thread').insertAdjacentHTML('afterbegin', '<img class="lightbox-img-hide" src="' + link + '">');
+      document.getElementById('thread').insertAdjacentHTML(
+        'afterbegin', '<img class="lightbox-img-hide" src="' + link + '">'
+      );
     }
 
     for(let i = 0; i < img.length; i++){
@@ -25,17 +27,21 @@ function lightbox(){
               case '.bmp':
                 document.getElementById('thread').insertAdjacentHTML(
                   'afterbegin',
-                  '<div id="lightbox"><img id="lightbox-img" src="' + link + '"></div>'
+                  '<div id="lightbox"><img src="' + link + '"></div>'
                 );
+                break;
+              case '.pdf':
                 break;
               default:
                 let file = link.indexOf('&');
                 link = link.slice(0, file);
+                let url = decodeURI(link);
+                let limit = url.indexOf('v=/');
+                url = 'https://lainchan.org/' + url.slice(limit + 3, url.length);
                 document.getElementById('thread').insertAdjacentHTML(
                   'afterbegin',
-                  '<div id="lightbox"><video id="lightbox-video" src="' + link + '" autoplay="true" loop="true"></video></div>'
+                  '<div id="lightbox"><video src="' + url + '" autoplay="true" loop="true"></video></div>'
                 );
-                console.log(link);
                 break;
             }
         }, false);
