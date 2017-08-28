@@ -31,6 +31,9 @@ function lightbox(){
           );
           break;
         case '.pdf':
+        case 'djvu':
+        case 'epub':
+        case '.txt':
           break;
         default:
           let file = link.indexOf('&');
